@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="orderBox">
+      <div class="orderHead">Place an Order</div>
+      <div class="orderMain">
+        <div class="name">
+          <p>Your Name:</p>
+        </div>
+        <input type="text" id="orderName" />
+        <div class="item">
+          <p>Item:</p>
+        </div>
+        <input type="text" id="orderItem" list="itemList" />
+
+        <datalist id="itemList">
+          <option value="Latte - $4.50"></option>
+          <option value="Donut - $3.00"></option>
+          <option value="Cookie - $2.50"></option>
+        </datalist>
+
+        <div class="quantity">
+          <p>Quantity:</p>
+        </div>
+        <input type="number" id="orderQuantity" />
+        <input type="button" value="Order Now" id="orderBtn" class="orderBtn" />
+        <p id="orderConfirmation" class="orderConfirmation"></p>
+      </div>
+    </div>
+    <script src="app/app.js"></script>
+  </body>
+</html>
